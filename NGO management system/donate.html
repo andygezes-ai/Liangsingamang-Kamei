@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="donate">
+    <h2 class="section-title">Donate & Support<img width="40" height="40"  src="https://img.icons8.com/offices/30/donation.png" alt="donation"/></h2>
+
+    <div class="donation">
+      <div>
+        <h2 style="color:#0f766e; margin-bottom:15px;">Your donation creates real change</h2>
+        <p style="line-height:1.8;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias totam vero quaerat, asperiores minima ab facere quo hic ut recusandae quidem nulla, error odit exercitationem earum, laudantium animi cumque.
+        </p>
+      </div>
+
+      <form onsubmit="submitDonation(event)">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <input type="number" id="amount" placeholder="Donation Amount ₹" required />
+
+        <select id="type">
+          <option>One-Time Donation</option>
+          <option>Monthly Recurring Donation</option>
+          <option>Annual Recurring Donation</option>
+        </select>
+        <textarea rows="4" placeholder="Message / Purpose"></textarea>
+
+        <button class="btn" type="submit">Submit Donation</button>
+
+        <p class="message" id="donationMessage"></p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
